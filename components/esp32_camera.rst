@@ -436,6 +436,27 @@ Configuration for ESP-EYE
       name: My Camera
       # ...
 
+Configuration for XIAO ESP32S3 Sense
+------------------------------------
+
+.. code-block:: yaml
+
+    # Example configuration entry
+    esp32_camera:
+      external_clock:
+        pin: GPIO10
+        frequency: 20MHz
+      i2c_pins:
+        sda: GPIO40
+        scl: GPIO39
+      data_pins: [GPIO15, GPIO17, GPIO18, GPIO16, GPIO14, GPIO12, GPIO11, GPIO48]
+      vsync_pin: GPIO38
+      href_pin: GPIO47
+      pixel_clock_pin: GPIO13
+
+      # Image settings
+      name: My Camera
+      # ...
 
 See Also
 --------
